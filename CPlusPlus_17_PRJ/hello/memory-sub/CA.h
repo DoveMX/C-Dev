@@ -8,11 +8,14 @@
 
 class CA {
 public:
-    CA(int a);
+    CA(int a = 0);
     ~CA(void);
 
+    void TestCopy(CA copy);
+    void TestThisCopy() const;
+
 private:
-    int num;
+    int _id;
 };
 
 

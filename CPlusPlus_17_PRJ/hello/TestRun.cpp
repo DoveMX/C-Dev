@@ -5,6 +5,7 @@
 #include <iostream>
 #include "TestRun.h"
 #include "memory-sub/CA.h"
+#include "demo/assert/RunWithAssert.h"
 
 TestRun::TestRun() {
 
@@ -25,5 +26,17 @@ int TestRun::run_memoery_new() {
     CA* ca_2 = new(spec_adr) CA(3);
     delete ca_2;
 
+    /// 复制构造函数
+    CA ca_3 = CA(5);
+    ca_3.TestCopy(ca_3);
+    ca_3.TestThisCopy();
+
+    /// 测试默认有歧义/冲突的构造函数
+    CA unstate_obj;
+
     return 0;
+}
+
+void TestRun::run_assert_test() {
+    RunWithAssert demo = RunWithAssert(5);
 }

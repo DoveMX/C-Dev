@@ -13,6 +13,7 @@ public:
 
 public:
     int run_memoery_new();
+    void run_assert_test();
 };
 
 
