@@ -8,7 +8,7 @@
 
 RunWithAssert::RunWithAssert(int id):_id(id) {
     std::cout<<"-> RunWithAssert construct: id="<< _id << std::endl;
-    assert(id > 25);
+    assert(id > 0);
 }
 
 RunWithAssert::~RunWithAssert() {

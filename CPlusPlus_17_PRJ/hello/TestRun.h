@@ -13,7 +13,14 @@ public:
 
 public:
     int run_memoery_new();
+    int run_const_ptr_test();
     void run_assert_test();
+    void run_test_uml_code();
+    void run_stl_test_code();
+
+    void simple_stl_code() const;
+
+    void istream_iterator_code_test() const;
 };
 
 

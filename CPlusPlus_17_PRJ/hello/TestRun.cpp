@@ -3,9 +3,23 @@
 //
 
 #include <iostream>
+
+/// 引用STL
+#include <vector>
+#include <iterator>
+#include <sstream>
+#include <numeric>
+#include <algorithm>
+#include <memory>
+
+/// 本地化代码引用
 #include "TestRun.h"
 #include "memory-sub/CA.h"
 #include "demo/assert/RunWithAssert.h"
+#include "stl/SSTL.h"
+#include "uml-model/code/TPerson.h"
+#include "uml-model/code/TStudent.h"
+#include "uml-model/code/TGoodStudent.h"
 
 TestRun::TestRun() {
 
@@ -40,3 +54,29 @@ int TestRun::run_memoery_new() {
 void TestRun::run_assert_test() {
     RunWithAssert demo = RunWithAssert(5);
 }
+
+int TestRun::run_const_ptr_test() {
+    CA pCA = CA(33);
+    const int* pTmpId = pCA.getTmpID();
+    delete pTmpId;
+
+
+
+    return 0;
+}
+
+void DisplayOutput(const System::TPerson* personPtr) {
+    personPtr->Print();
+}
+
+
+void TestRun::run_test_uml_code() {
+    System::TGoodStudent s;
+    DisplayOutput(&s);
+}
+
+void TestRun::run_stl_test_code() {
+    SSTL::RunTest();
+}
+
+

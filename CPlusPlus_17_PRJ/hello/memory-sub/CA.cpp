@@ -1,11 +1,11 @@
 //
 // Created by Administrator on 9/6/2018.
 //
-
-#include "CA.h"
 #include <iostream>
+#include "CA.h"
 
-CA::CA(int a):_id(a)
+
+CA::CA(int a):_birthData(2010),_id(a)
 {
     std::cout<<"-> CA construct: id="<< _id << std::endl;
 }
@@ -25,6 +25,10 @@ void CA::TestThisCopy() const {
     CA tmp_obj = *this;
     tmp_obj._id = 40;
     std::cout<<"~id="<< tmp_obj._id << std::endl;
+}
+
+const int* const CA::getTmpID() const {
+    return nullptr;
 }
 
 
