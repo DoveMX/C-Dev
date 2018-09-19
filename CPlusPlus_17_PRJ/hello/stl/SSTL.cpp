@@ -41,6 +41,16 @@ struct FooDelter {
     }
 };
 
+template<typename T>
+std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec)
+{
+    for (auto& el : vec)
+    {
+        os << el << ' ';
+    }
+    return os;
+}
+
 void SSTL::Simple_stl_code()  {
 
     /// 测试基础数据结构和迭代算法
@@ -76,7 +86,7 @@ void SSTL::Simple_stl_code()  {
             "Hello", "from", "GCC", __VERSION__, "!"
     };
 
-    std::cout << std::accumulate(vec_data.begin(), vec_data.end(), std::string("")) << std::endl;
+    // std::cout << std::accumulate(vec_data.begin(), vec_data.end(), std::string("")) << std::endl;
 
-//    std::cout << vec << std::endl;
+    std::cout << vec_data << std::endl;
 }
