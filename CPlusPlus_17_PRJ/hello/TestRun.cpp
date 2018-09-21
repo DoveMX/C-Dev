@@ -79,4 +79,22 @@ void TestRun::run_stl_test_code() {
     SSTL::RunTest();
 }
 
+void TestRun::Run() {
+
+    /// 启动内存测试
+    this->run_memoery_new();
+
+    /// 启动测试Assert断言
+    this->run_assert_test();
+
+    /// 启动测试const指针
+    this->run_const_ptr_test();
+
+    /// 启动测试UML代码
+    this->run_test_uml_code();
+
+    /// 启动测试STL代码
+    this->run_stl_test_code();
+}
+
 

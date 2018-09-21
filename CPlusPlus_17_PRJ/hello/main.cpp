@@ -1,5 +1,6 @@
 #include <iostream>
 #include "TestRun.h"
+#include "CQuestionsRun.h"
 
 
 
@@ -9,22 +10,19 @@ int main() {
     std::cout << "Hello " << "from " << "GCC " <<__VERSION__ << std::endl;
     std::cout << "--------------" << std::endl;
 
-    TestRun* ts = new TestRun();
+    /// C++ 面试问题学习处理
+    CQuestionsRun* cqr = new CQuestionsRun();
+    cqr->Run();
+    delete(cqr);
 
-    /// 启动内存测试
-    ts->run_memoery_new();
 
-    /// 启动测试Assert断言
-    ts->run_assert_test();
+    /// 测试Run
 
-    /// 启动测试const指针
-    ts->run_const_ptr_test();
+    if (0) {
+        TestRun* ts = new TestRun();
+        ts->Run();
+    }
 
-    /// 启动测试UML代码
-    ts->run_test_uml_code();
-
-    /// 启动测试STL代码
-    ts->run_stl_test_code();
 
 
     return 0;

@@ -10,13 +10,35 @@
 #include <string>
 #include <numeric>
 #include <algorithm>
+#include <functional>
 #include <memory>
 
 #include "SSTL.h"
 
+template<typename T>
+std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec)
+{
+    for (auto& el : vec)
+    {
+        os << el << ' ';
+    }
+    return os;
+}
+
 void SSTL::RunTest() {
+
     Simple_stl_code();
     Istream_iterator_code_test();
+
+    std::cout << "--------------" << std::endl;
+
+    std::vector<std::string> vec_data = {
+            "Hello", "from", "GCC", __VERSION__, "!"
+    };
+
+    // std::cout << std::accumulate(vec_data.begin(), vec_data.end(), std::string("")) << std::endl;
+
+    std::cout << vec_data << std::endl;
 }
 
 void SSTL::Istream_iterator_code_test()  {
@@ -34,22 +56,19 @@ struct Foo {
     ~Foo() { std::cout << "~Foo ... \n"; }
 };
 
-struct FooDelter {
+struct FooDeleter {
     void operator() (Foo* p) {
         std::cout << "Calling delete for Foo object ... \n";
         delete p;
     }
 };
 
-template<typename T>
-std::ostream& operator<<(std::ostream& os, const std::vector<T>& vec)
-{
-    for (auto& el : vec)
-    {
-        os << el << ' ';
-    }
-    return os;
-}
+
+class RootSqrt {
+public:
+    double operator() (double x) { return x*x; };
+};
+
 
 void SSTL::Simple_stl_code()  {
 
@@ -74,19 +93,59 @@ void SSTL::Simple_stl_code()  {
     std::cout << *pname << std::endl;
     pname.reset();
 
-    ///
-    auto uptr = std::unique_ptr<Foo, FooDelter>(new Foo(), FooDelter());
+    /// 测试
+    auto uptr = std::unique_ptr<Foo, FooDeleter>(new Foo(), FooDeleter());
     std::cout << "Replace owned Foo with a new Foo...\n";
     uptr.reset();
 
-    std::cout << "--------------" << std::endl;
+
+    /// 测试lambda 表达式
+    auto cube = [] (double value) { return value*value*value;};
+    std::cout << cube({2.5}) << std::endl;
 
 
-    std::vector<std::string> vec_data = {
-            "Hello", "from", "GCC", __VERSION__, "!"
-    };
+    /// 测试Std Function
+    RootSqrt rootSqrt;
+    std::cout << "Square roots are:" << std::endl;
+    std::transform(std::begin(data), std::end(data), std::ostream_iterator<double>(std::cout, " "), rootSqrt);
+    std::cout << std::endl;
 
-    // std::cout << std::accumulate(vec_data.begin(), vec_data.end(), std::string("")) << std::endl;
 
-    std::cout << vec_data << std::endl;
+    /// 测试部分容器的函数 get
+    std::array<std::string, 5> words {"one", "two", "three", "four", "five"};
+    std::cout << "std::get<3>(words) = " << std::get<3>(words) << std::endl;
+    std::cout << "word.at(3) = " << words.at(3) << std::endl;
+
+
+    /// 测试vector的大小和容量. 容量最小等于大小，但是，容量是根据算法计算分配的
+    std::vector<size_t> primes {2, 3, 5, 7, 11, 13, 17, 19, 23, 31, 37, 41, 43, 47, 55};
+    std::cout << "The size is " << primes.size() << std::endl;
+    std::cout << "The capacity is " << primes.capacity() << std::endl;
+    primes.push_back(size_t {77});
+    std::cout << "The size is " << primes.size() << std::endl;
+    std::cout << "The capacity is " << primes.capacity() << std::endl;
+
+    std::cout << "primes[0] = " << primes[0] << std::endl;
+    primes.front() = 1;
+    std::cout << "primes[0] = " << primes[0] << std::endl;
+
+    /// 算法库中的copy函数
+    std::copy(std::begin(primes), std::end(primes), std::ostream_iterator<size_t>(std::cout, " "));
+    std::cout << std::endl;
+
+    /// 使用高效的成员函数 emplace 插入新的元素
+    primes.emplace(++std::begin(primes), 105);
+    std::cout << "The size is " << primes.size() << std::endl;
+    std::copy(std::begin(primes), std::end(primes), std::ostream_iterator<size_t>(std::cout, " "));
+    std::cout << std::endl;
+    std::cout << "The capacity is " << primes.capacity() << std::endl;
+
+
+    /// 使用reserve
+    primes.reserve(32);
+    std::copy(std::begin(primes), std::end(primes), std::ostream_iterator<size_t>(std::cout, " "));
+    std::cout << std::endl;
+    std::cout << "The capacity is " << primes.capacity() << std::endl;
+    std::cout << std::endl;
+
 }

@@ -11,7 +11,9 @@ public:
     TestRun();
     ~TestRun();
 
+    void Run();
 public:
+
     int run_memoery_new();
     int run_const_ptr_test();
     void run_assert_test();
