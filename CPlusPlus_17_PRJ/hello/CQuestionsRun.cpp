@@ -5,12 +5,20 @@
 #include <iostream>
 
 #include "CQuestionsRun.h"
-
 #include "questions/000/CQ000.h"
 #include "questions/001/CQ001.h"
 #include "questions/002/CQ002.h"
 #include "questions/003/CQ003.h"
+#include "questions/004/CQ004.h"
+#include "questions/005/CQ005.h"
+#include "questions/006/CQ006.h"
 
+#ifndef CALL_TESTER
+#define CALL_TESTER(n_id) \
+    CQuestionsTest::CQ##n_id* tester##n_id = new CQuestionsTest::CQ##n_id(); \
+    tester##n_id->Run(); \
+    delete (tester##n_id);
+#endif
 
 
 CQuestionsRun::CQuestionsRun() {
@@ -22,42 +30,5 @@ CQuestionsRun::~CQuestionsRun() {
 }
 
 void CQuestionsRun::Run() {
-    size_t question_no = 3;
-
-    switch (question_no) {
-        case 0: {
-            CQuestionsTest::CQ000 *tester = new CQuestionsTest::CQ000();
-            tester->Run();
-            delete (tester);
-        }
-
-            break;
-
-        case 1: {
-            CQuestionsTest::CQ001 *tester = new CQuestionsTest::CQ001();
-            tester->Run();
-            delete (tester);
-        }
-
-            break;
-
-        case 2: {
-            CQuestionsTest::CQ002 *tester = new CQuestionsTest::CQ002();
-            tester->Run();
-            delete (tester);
-        }
-
-            break;
-        case 3: {
-            CQuestionsTest::CQ003 *tester = new CQuestionsTest::CQ003();
-            tester->Run();
-            delete (tester);
-        }
-
-            break;
-
-        default:
-            break;
-    }
-
+    CALL_TESTER(006);
 }

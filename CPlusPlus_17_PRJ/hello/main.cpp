@@ -3,6 +3,10 @@
 #include "CQuestionsRun.h"
 
 
+int Call_onExit_func() {
+    std::cout << "----------- is call on exit function by _onexit register !!!" << std::endl;
+    return 0;
+}
 
 int main() {
 
@@ -23,8 +27,10 @@ int main() {
         ts->Run();
     }
 
-
+    _onexit(Call_onExit_func);
 
     return 0;
 }
+
+
 
