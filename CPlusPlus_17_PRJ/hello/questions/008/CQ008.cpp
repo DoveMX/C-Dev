@@ -10,18 +10,21 @@ namespace CQuestionsTest {
     class HasPtrMem {
     public:
         HasPtrMem(): d(new int(0)) {
-            std::cout << "Construct: " << ++n_cstr << std::endl;
+            std::cout << __func__ << "::Construct: " << ++n_cstr << std::endl;
+        }
+        HasPtrMem(HasPtrMem& h): d(new int(*h.d)) {
+            std::cout << __func__ << "::Copy construct: " << ++n_cptr << std::endl;
         }
         HasPtrMem(const HasPtrMem& h): d(new int(*h.d)) {
-            std::cout << "Copy construct: " << ++n_cptr << std::endl;
+            std::cout << __func__ << "::Copy construct: " << ++n_cptr << std::endl;
         }
         HasPtrMem(HasPtrMem &&h): d(h.d) {
             h.d = nullptr;
-            std::cout << "Move construct: " << ++n_mvtr << std::endl;
+            std::cout << __func__ << "::Move construct: " << ++n_mvtr << std::endl;
         }
         virtual ~HasPtrMem() {
             delete d;
-            std::cout << "Destruct: " << ++n_dstr << std::endl;
+            std::cout << __func__ << "::Destruct: " << ++n_dstr << std::endl;
         }
 
     public:
@@ -58,7 +61,7 @@ namespace CQuestionsTest {
     void CQ008::Run() {
         std::cout << _className << "::" << __func__ << std::endl;
 
-        HasPtrMem a = GetTemp();
+        HasPtrMem a(GetTemp());
         std::cout << "Resource from " << __func__ << ": " << std::hex << a.d << std::endl;
 
         PrintLine();

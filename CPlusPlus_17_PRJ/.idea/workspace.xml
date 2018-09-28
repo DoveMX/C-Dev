@@ -12,18 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="adb4adf8-2854-4bc3-9f84-0db285333047" name="Default" comment="新代码进行存储">
-      <change afterPath="$PROJECT_DIR$/hello/questions/004/CQ004.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello/questions/004/CQ004.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello/questions/005/CQ005.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello/questions/005/CQ005.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello/questions/005/c_cq005.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello/questions/005/c_cq005.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello/questions/006/CQ006.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hello/questions/006/CQ006.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/CQuestionsRun.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/hello/CQuestionsRun.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/hello/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/questions/008/CQ008.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/hello/questions/008/CQ008.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,6 +31,7 @@
           <entry key="project.open.time.23" value="3" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.48" value="1" />
@@ -48,14 +39,15 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="c" value="56" />
-          <entry key="cpp" value="9001" />
-          <entry key="h" value="1642" />
+          <entry key="cpp" value="9626" />
+          <entry key="h" value="2750" />
+          <entry key="mm" value="16" />
           <entry key="readme" value="15" />
           <entry key="txt" value="24" />
         </counts>
@@ -63,28 +55,29 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="6" />
-          <entry key="Doxygen file" value="29" />
-          <entry key="ObjectiveC" value="10670" />
+          <entry key="Doxygen file" value="34" />
+          <entry key="ObjectiveC" value="12414" />
           <entry key="PLAIN_TEXT" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Build All (disassembly)" value="2" />
           <entry key="c" value="1" />
           <entry key="cbp" value="1" />
-          <entry key="cpp" value="30" />
-          <entry key="h" value="40" />
+          <entry key="cpp" value="37" />
+          <entry key="h" value="44" />
           <entry key="hello (disassembly)" value="1" />
           <entry key="make" value="1" />
           <entry key="readme" value="1" />
-          <entry key="txt" value="7" />
+          <entry key="txt" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="7" />
-          <entry key="Disassembly" value="1" />
-          <entry key="ObjectiveC" value="71" />
+          <entry key="CMakeLists.txt" value="8" />
+          <entry key="Disassembly" value="3" />
+          <entry key="ObjectiveC" value="82" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
@@ -95,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-7">
               <caret line="6" column="78" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="78" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -107,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello/CQuestionsRun.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+            <state relative-caret-position="-7">
+              <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
               <folding>
                 <element signature="e#49#68#0" expanded="true" />
               </folding>
@@ -117,40 +110,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello/questions/001/CQ001.cpp">
+        <entry file="file://$PROJECT_DIR$/hello/questions/007/CQ007.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello/questions/001/CQ001.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="-7">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#49#68#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hello/questions/006/CQ006.cpp">
+        <entry file="file://$PROJECT_DIR$/hello/questions/008/CQ008.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+            <state relative-caret-position="173">
+              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hello/questions/008/CQ008.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding>
-                <element signature="e#49#67#0" expanded="true" />
+                <element signature="e#94#113#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello/questions/006/CQ006.h">
+        <entry file="file://$PROJECT_DIR$/hello/questions/007/CQ007.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="-7">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#94#113#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -194,7 +193,6 @@
         <option value="$PROJECT_DIR$/hello/questions/000/CQ000.h" />
         <option value="$PROJECT_DIR$/hello/questions/001/CQ001.h" />
         <option value="$PROJECT_DIR$/hello/questions/000/CQ000.cpp" />
-        <option value="$PROJECT_DIR$/hello/questions/001/CQ001.cpp" />
         <option value="$PROJECT_DIR$/hello/questions/002/CQ002.h" />
         <option value="$PROJECT_DIR$/hello/questions/002/CQ002.cpp" />
         <option value="$PROJECT_DIR$/hello/questions/003/CQ003.h" />
@@ -206,9 +204,14 @@
         <option value="$PROJECT_DIR$/hello/questions/005/c_cq005.c" />
         <option value="$PROJECT_DIR$/hello/questions/005/CQ005.cpp" />
         <option value="$PROJECT_DIR$/hello/main.cpp" />
+        <option value="$PROJECT_DIR$/hello/questions/001/CQ001.cpp" />
         <option value="$PROJECT_DIR$/hello/questions/006/CQ006.h" />
-        <option value="$PROJECT_DIR$/hello/CQuestionsRun.cpp" />
         <option value="$PROJECT_DIR$/hello/questions/006/CQ006.cpp" />
+        <option value="$PROJECT_DIR$/hello/questions/007/CQ007.h" />
+        <option value="$PROJECT_DIR$/hello/questions/007/CQ007.cpp" />
+        <option value="$PROJECT_DIR$/hello/questions/008/CQ008.h" />
+        <option value="$PROJECT_DIR$/hello/CQuestionsRun.cpp" />
+        <option value="$PROJECT_DIR$/hello/questions/008/CQ008.cpp" />
       </list>
     </option>
   </component>
@@ -219,8 +222,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2073" />
-    <option name="y" value="11" />
+    <option name="x" value="2051" />
+    <option name="y" value="-2" />
     <option name="width" value="1400" />
     <option name="height" value="1014" />
   </component>
@@ -230,6 +233,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,6 +250,12 @@
               <item name="hello" type="b2602c69:ProjectViewProjectNode" />
               <item name="CPlusPlus_17_PRJ" type="462c0819:PsiDirectoryNode" />
               <item name="hello" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hello" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CPlusPlus_17_PRJ" type="462c0819:PsiDirectoryNode" />
+              <item name="hello" type="462c0819:PsiDirectoryNode" />
               <item name="questions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -253,13 +263,12 @@
               <item name="CPlusPlus_17_PRJ" type="462c0819:PsiDirectoryNode" />
               <item name="hello" type="462c0819:PsiDirectoryNode" />
               <item name="questions" type="462c0819:PsiDirectoryNode" />
-              <item name="006" type="462c0819:PsiDirectoryNode" />
+              <item name="008" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,7 +276,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myShowDebugConsoleByDefault" value="true" />
@@ -346,7 +355,8 @@
       <workItem from="1536217802711" duration="25151000" />
       <workItem from="1536719331516" duration="27869000" />
       <workItem from="1537239281278" duration="11638000" />
-      <workItem from="1537853504941" duration="3694000" />
+      <workItem from="1537853504941" duration="18700000" />
+      <workItem from="1538103467443" duration="8412000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1536629892775</created>
@@ -376,30 +386,43 @@
       <option name="project" value="LOCAL" />
       <updated>1537498789556</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="新代码进行存储">
+      <created>1537859769389</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537859769389</updated>
+    </task>
+    <task id="LOCAL-00006" summary="新代码进行存储">
+      <created>1538117282962</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1538117282962</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134674000" />
+    <option name="totallyTimeSpent" value="158092000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2073" y="11" width="1400" height="1014" extended-state="0" />
-    <editor active="true" />
+    <frame x="2051" y="-2" width="1400" height="1014" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7074592" weight="0.2335821" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7074592" visible="true" weight="0.23582089" />
       <window_info id="Structure" order="1" sideWeight="0.2925408" side_tool="true" weight="0.2335821" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32917705" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34848484" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32867134" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3018648" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3018648" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32793018" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.33333334" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.42643392" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32992035" />
@@ -423,27 +446,36 @@
     <MESSAGE value="新代码进行存储" />
     <option name="LAST_COMMIT_MESSAGE" value="新代码进行存储" />
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>&amp;p1</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>&amp;T[0]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>T[]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>p[0] + 1</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>p[0]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hello/CMakeLists.txt" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/hello.cbp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-848" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello/demo/base_abstraction/Int.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="31" column="2" lean-forward="true" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello/demo/base_abstraction/Int.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/hello.dir/build.make">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -554,13 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hello/3th-libs/gpu/arrayfire/readme">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -617,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/questions/002/CQ002.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hello/questions/000/CQ000.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -638,24 +656,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/questions/003/CQ003.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="52" column="98" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hello/questions/003/CQ003.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="15" selection-start-line="15" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello/questions/004/CQ004.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -694,27 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="78" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hello/questions/001/CQ001.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hello/questions/006/CQ006.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -725,30 +712,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/CQuestionsRun.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        <state relative-caret-position="84">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello/questions/001/CQ001.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello/questions/004/CQ004.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="e#48#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello/questions/003/CQ003.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="52" column="98" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="98" />
+          <folding>
+            <element signature="e#48#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello/questions/002/CQ002.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="854">
+          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
           <folding>
             <element signature="e#49#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello/questions/001/CQ001.cpp">
+    <entry file="file://$PROJECT_DIR$/hello/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="39" />
+        <state relative-caret-position="-7">
+          <caret line="6" column="78" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hello/questions/006/CQ006.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+        <state relative-caret-position="2870">
+          <caret line="205" selection-start-line="205" selection-end-line="207" selection-end-column="5" />
           <folding>
             <element signature="e#49#67#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello/questions/006/CQ006.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" selection-start-line="9" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello/questions/007/CQ007.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#94#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello/questions/007/CQ007.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#49#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello/questions/008/CQ008.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <element signature="e#94#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello/CQuestionsRun.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="e#49#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello/questions/008/CQ008.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
         </state>
       </provider>
     </entry>
