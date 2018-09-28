@@ -1,17 +1,21 @@
 //
-// Created by Administrator on 9/24/2018.
+// Created by Administrator on 9/28/2018.
 //
 
-#ifndef HELLO_CQ006_H
-#define HELLO_CQ006_H
+#ifndef HELLO_CQ008_H
+#define HELLO_CQ008_H
 
 #include <iostream>
+#include <string>
+
 
 namespace CQuestionsTest {
-    class CQ006 {
+    class CQ008 {
     public:
-        CQ006();
-        virtual ~CQ006();
+        CQ008();
+
+        virtual ~CQ008();
+
         void Run();
 
     private:
@@ -19,11 +23,8 @@ namespace CQuestionsTest {
 
         std::string _description;
         std::string _className;
-
     };
 }
 
 
-
-
-#endif //HELLO_CQ006_H
+#endif //HELLO_CQ008_H

@@ -56,7 +56,10 @@ void CQ001::PrintLine() const {
     std::cout << std::endl << "---////////////////////////////////////////-- \n" << std::endl;
 }
 
-
+/**
+ * @brief 单链表反转
+ * @param head
+ */
 void CQ001::Reverse(link_unit*& head) {
     if (head == NULL) {
         return;

@@ -12,6 +12,8 @@
 #include "questions/004/CQ004.h"
 #include "questions/005/CQ005.h"
 #include "questions/006/CQ006.h"
+#include "questions/007/CQ007.h"
+#include "questions/008/CQ008.h"
 
 #ifndef CALL_TESTER
 #define CALL_TESTER(n_id) \
@@ -30,5 +32,5 @@ CQuestionsRun::~CQuestionsRun() {
 }
 
 void CQuestionsRun::Run() {
-    CALL_TESTER(006);
+    CALL_TESTER(008);
 }

@@ -7,12 +7,12 @@
 
 namespace CQuestionsTest {
 
-    CQ006::CQ006():_description("演示几个算法问题") {
-        std::cout << __func__ << "\n" << _description <<std::endl;
+    CQ006::CQ006():_className(__func__),_description("演示几个算法问题") {
+        std::cout << _className << "\n" << _description <<std::endl;
     }
 
     CQ006::~CQ006() {
-        std::cout << __func__ << std::endl;
+        std::cout << _className << "::" <<__func__ << std::endl;
     }
 
     void FindSecondMaxNum(int data[], int count) {
@@ -106,6 +106,58 @@ namespace CQuestionsTest {
         return 0;
     }
 
+    int kmp_find(const std::string& target,const std::string& pattern)
+    {
+        const int target_length = target.size();
+        const int pattern_length = pattern.size();
+        int * overlay_value = new int[pattern_length];
+        overlay_value[0] = -1;
+        int index = 0;
+        for(int i=1;i<pattern_length;++i)
+        {
+            index = overlay_value[i-1];
+            while(index>=0 && pattern[index+1]!=pattern[i])
+            {
+                index = overlay_value[index];
+            }
+            if(pattern[index+1]==pattern[i])
+            {
+                overlay_value[i] = index +1;
+            }
+            else
+            {
+                overlay_value[i] = -1;
+            }
+        }
+        //match algorithm start
+        int pattern_index = 0;
+        int target_index = 0;
+        while(pattern_index<pattern_length&&target_index<target_length)
+        {
+            if(target[target_index]==pattern[pattern_index])
+            {
+                ++target_index;
+                ++pattern_index;
+            }
+            else if(pattern_index==0)
+            {
+                ++target_index;
+            }
+            else
+            {
+                pattern_index = overlay_value[pattern_index-1]+1;
+            }
+        }
+        if(pattern_index==pattern_length)
+        {
+            return target_index-pattern_index;
+        }
+        else
+        {
+            return -1;
+        }
+        delete [] overlay_value;
+    }
 
 
     void CQ006::Run() {
@@ -114,6 +166,40 @@ namespace CQuestionsTest {
         FindSecondMaxNum(num_data, 5);
         PrintLine();
         FindSubStrinPosgByKMP();
+        PrintLine();
+
+        /// 核心代码
+        std::cout << __func__ << "\n" << "KMP算法C++实现" <<std::endl;
+        std::string source = " ababxbabababcdabdcadfdsss";
+        std::string pattern = " abcdabd";
+        std::cout<<kmp_find(source,pattern)<<std::endl;
+        PrintLine();
+
+
+        ///
+        std::cout << __func__ << "\n" << "测试结果输出" <<std::endl;
+        int n[][3] = {10, 20, 30, 40, 50, 60};
+        int (*p)[3];
+        p = n;
+        std::cout << p[0][0] << "," << *(p[0] + 1) << "," << (*p)[2] << std::endl;
+        PrintLine();
+
+
+        /// 计算地址. 主要
+        std::cout << __func__ << "\n" << "测试指针位置" <<std::endl;
+        unsigned char* p1;
+        unsigned int* p2;
+        p1 = (unsigned char*)0x810000;
+        p2 = (unsigned int*)0x820000;
+        unsigned char* p3 = p1 + 5;
+        unsigned char* p5 = p3 + 5;
+        unsigned int* p4 = p2 + 5;
+        unsigned int* p6 = p4 + 5;
+
+        int d = p6 - p4;
+
+        std::cout << "sizeof(char) = " << sizeof(char) << std::endl;
+        std::cout << "sizeof(int) = " << sizeof(int) << std::endl;
         PrintLine();
     }
 
