@@ -46,7 +46,7 @@ namespace CQuestionsTest {
         return h;
     }
 
-    CQ008::CQ008() : _className(__func__), _description("演示移动构造函数的好处") {
+    CQ008::CQ008() : _className(__func__), _description("演示移动构造函数的好处 - 处理，不支持") {
         std::cout << _className << "\n" << _description << std::endl;
     }
 
